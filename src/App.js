@@ -50,7 +50,7 @@ function App() {
     if (!firebaseConfigured) {
       setStatusMessage({
         type: "warning",
-        text: "Firebase config is missing. Add REACT_APP_FIREBASE_* values to enable live data.",
+        text: "Backend config is missing. Add REACT_APP_FIREBASE_* values to enable live data.",
       });
       return undefined;
     }
@@ -309,7 +309,7 @@ function App() {
         <section className="status-strip">
           <div>
             <strong>Backend:</strong>{" "}
-            {firebaseConfigured ? "Firebase connected through environment config." : "Firebase not configured yet."}
+            {firebaseConfigured ? "Connected through backend environment config." : "Backend not configured yet."}
           </div>
           <div className={`status-pill ${statusMessage.type}`}>{statusMessage.text || "Ready"}</div>
         </section>
@@ -387,6 +387,10 @@ function App() {
             )}
           </div>
         </section>
+
+        <footer className="app-footer">
+          <p>&copy; {new Date().getFullYear()} Library Management System. All rights reserved.</p>
+        </footer>
       </main>
     </div>
   );

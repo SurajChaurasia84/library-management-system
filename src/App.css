@@ -14,7 +14,7 @@
   z-index: 1;
   max-width: 1380px;
   margin: 0 auto;
-  padding: max(40px, env(safe-area-inset-top)) 24px 60px;
+  padding: max(40px, env(safe-area-inset-top)) 24px 28px;
 }
 
 .ambient {
@@ -240,6 +240,22 @@ button.danger {
 .content-grid.single-column {
   grid-template-columns: minmax(0, 1fr);
   scroll-margin-top: 20px;
+}
+
+.app-footer {
+  margin-top: 24px;
+  padding: 18px 22px;
+  border-radius: 22px;
+  backdrop-filter: blur(18px);
+  background: rgba(10, 20, 43, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+  text-align: center;
+}
+
+.app-footer p {
+  margin: 0;
+  color: #c7d4f3;
 }
 
 .primary-column,
@@ -490,7 +506,7 @@ textarea::placeholder {
 
 @media (max-width: 760px) {
   .dashboard {
-    padding: max(20px, env(safe-area-inset-top)) 14px 36px;
+    padding: max(20px, env(safe-area-inset-top)) 14px 18px;
   }
 
   .hero-panel,
