@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Toaster, toast } from "react-hot-toast";
 import "./App.css";
 import {
   borrowBook,
@@ -114,6 +115,22 @@ function App() {
 
   function showMessage(type, text) {
     setStatusMessage({ type, text });
+
+    if (type === "error") {
+      toast.error(text);
+      return;
+    }
+
+    if (type === "success") {
+      toast.success(text);
+      return;
+    }
+
+    if (type === "warning") {
+      toast(text, {
+        icon: "!",
+      });
+    }
   }
 
   async function handleBookSubmit(event) {
@@ -232,6 +249,31 @@ function App() {
 
   return (
     <div className="app-shell">
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          duration: 2800,
+          style: {
+            background: "rgba(8, 17, 31, 0.96)",
+            color: "#f5f7fb",
+            border: "1px solid rgba(255,255,255,0.08)",
+            borderRadius: "16px",
+            boxShadow: "0 18px 40px rgba(0,0,0,0.28)",
+          },
+          success: {
+            iconTheme: {
+              primary: "#84efc8",
+              secondary: "#08111f",
+            },
+          },
+          error: {
+            iconTheme: {
+              primary: "#ff9fb7",
+              secondary: "#08111f",
+            },
+          },
+        }}
+      />
       <div className="ambient ambient-one" />
       <div className="ambient ambient-two" />
       <div className="ambient ambient-three" />
