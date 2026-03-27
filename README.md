@@ -1,4 +1,4 @@
-# Library Management System
+# Smart Library Management System
 
 Library Management System is a modern web application designed to manage the core operations of a library in one digital workspace. It brings together book records, member records, circulation activity, and live operational updates inside a clean interface with an animated visual style.
 
@@ -78,3 +78,7 @@ The UI also emphasizes:
 This system is intended to simplify library administration by reducing manual tracking and giving administrators a structured digital platform for handling books, members, and transactions.
 
 It is suitable as a base system for academic libraries, institute libraries, training centers, or any organization that needs a simple and modern library workflow.
+
+## Author
+
+Suraj Chaurasia
