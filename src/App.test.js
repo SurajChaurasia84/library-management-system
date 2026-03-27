@@ -1,8 +1,21 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+jest.mock("./services/libraryService", () => ({
+  firebaseConfigured: false,
+  subscribeToBooks: () => () => {},
+  subscribeToMembers: () => () => {},
+  subscribeToTransactions: () => () => {},
+  createBook: jest.fn(),
+  updateBook: jest.fn(),
+  removeBook: jest.fn(),
+  createMember: jest.fn(),
+  removeMember: jest.fn(),
+  borrowBook: jest.fn(),
+  returnBook: jest.fn(),
+}));
+
+test("renders the professional library management heading", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText(/professional library management/i)).toBeInTheDocument();
 });
