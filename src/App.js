@@ -281,7 +281,7 @@ function App() {
         <section className="hero-panel">
           <div className="hero-copy">
             <span className="eyebrow">Smart Library Management System</span>
-            <h1>Manage books, members, and circulation in one polished workspace.</h1>
+            <h1>Manage books, members, and circulation in one digital workspace.</h1>
             <p>
               A focused library dashboard with live Firestore syncing, clean card layouts,
               issue and return workflows, and a soft animated background.
