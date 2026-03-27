@@ -1,0 +1,15 @@
+{
+  "short_name": "Library",
+  "name": "Library Management System",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0a1228",
+  "background_color": "#07101f"
+}
