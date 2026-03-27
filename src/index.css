@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", "Trebuchet MS", sans-serif;
   background: #07101f;
+  overflow-x: hidden;
 }
 
 a {

@@ -14,7 +14,7 @@
   z-index: 1;
   max-width: 1380px;
   margin: 0 auto;
-  padding: 40px 24px 60px;
+  padding: max(40px, env(safe-area-inset-top)) 24px 60px;
 }
 
 .ambient {
@@ -235,6 +235,7 @@ button.danger {
 
 .content-grid.single-column {
   grid-template-columns: minmax(0, 1fr);
+  scroll-margin-top: 20px;
 }
 
 .primary-column,
@@ -485,7 +486,7 @@ textarea::placeholder {
 
 @media (max-width: 760px) {
   .dashboard {
-    padding: 20px 14px 36px;
+    padding: max(20px, env(safe-area-inset-top)) 14px 36px;
   }
 
   .hero-panel,
