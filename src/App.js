@@ -547,7 +547,7 @@ function MembersSection({
           <input
             value={memberForm.name}
             onChange={(event) => onMemberFormChange((current) => ({ ...current, name: event.target.value }))}
-            placeholder="Aarav Sharma"
+            placeholder="Enter student name"
             required
           />
         </label>
@@ -557,7 +557,7 @@ function MembersSection({
             type="email"
             value={memberForm.email}
             onChange={(event) => onMemberFormChange((current) => ({ ...current, email: event.target.value }))}
-            placeholder="reader@example.com"
+            placeholder="student@gmail.com"
             required
           />
         </label>
@@ -568,7 +568,7 @@ function MembersSection({
             onChange={(event) =>
               onMemberFormChange((current) => ({ ...current, department: event.target.value }))
             }
-            placeholder="Computer Science"
+            placeholder="Information Technology"
             required
           />
         </label>
