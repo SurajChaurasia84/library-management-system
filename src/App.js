@@ -372,7 +372,7 @@ function CatalogSection({
       </div>
       <form className="form-grid" onSubmit={onSubmit}>
         <label>
-          Book Title
+          Title
           <input
             value={bookForm.title}
             onChange={(event) => onBookFormChange((current) => ({ ...current, title: event.target.value }))}
