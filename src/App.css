@@ -289,6 +289,12 @@ button.danger {
   margin: 0 0 6px;
 }
 
+.panel-heading h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .form-grid {
   margin-top: 20px;
   display: grid;
